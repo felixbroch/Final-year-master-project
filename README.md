@@ -1,43 +1,67 @@
 # Final-year-master-project
-This repository is the code to the dashboard during my final year project during my Design Engineering degree. 
 
-The code consists of 2 files: 
-app.py which stores the front-end and the code of my dashboard.
-backend.py which contains the calculations and process made by the dashboard to output the plots avaiable in the front-end.
+This repository contains the code for the dashboard created during my final year project for my Design Engineering degree.
 
-The front-end has been coded using the Shiny Library in Python.
-The back-end is stored using a Redis server.
-The front-end and back-end communicate using the Flask library.
+## Code Structure
 
+The code consists of two files:
+- **`app.py`**: Contains the front-end code for the dashboard.
+- **`backend.py`**: Contains the calculations and processes used by the dashboard to generate the plots available in the front-end.
 
-preliminary set up:
+## Main Libraries Used
 
-Download redis:
+- The front-end is built using the **Shiny** library in Python.
+- The back-end is managed using a **Redis** server.
+- Communication between the front-end and back-end is handled by the **Flask** library.
 
-Using homebrew this can be done running in your terminal the followig command:
+## Preliminary Setup
+
+### Download Redis
+
+Using Homebrew, you can install Redis by running the following command in your terminal:
+```bash
 brew install redis
+```
 
-Once this is done, start the redis server using the following command:
+Once the installation is complete, start the Redis server using the command:
+```bash
 brew services start redis
+```
 
-The server can be stopped using"
+To stop the Redis server, use:
+```bash
 brew services stop redis
+```
 
-Now download redis for python (pip is a good way to do so):
+### Other libraries
+
+There are other libraries used in the code. Make sure you have them all downloaded and up to date.
+
+### Install Redis for Python
+
+You can install Redis for Python using pip:
+```bash
 pip install redis
+```
 
+## Launching the dashboard
 
-Now in a separate terminal, run the following command to lauch the redis server for the web-app:
+### Launch Redis Server
+
+In a separate terminal, run the following command to launch the Redis server for the web app:
+```bash
 redis-server
+```
 
+### Run the Backend
 
+Once Redis is running, execute the backend.py file. Ensure that all the required libraries are installed.
 
+### Run the Frontend
 
-
-Once this is done, run the backend.py file (make sure all the libraries used are installed)
-
-Finally, run the app.py using shiny. This is done by in a separate terminal entering:
+Finally, run the app.py using Shiny. In a separate terminal, enter:
+```bash
 shiny start
+```
 
-Then the code can be run easily
-
+Then app.py should be able to run as planned.
