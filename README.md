@@ -8,7 +8,7 @@ Supervisor: Professor Pierre Pinson
 
 ## Project Overview
 
-This repository contains the implementation of a dynamic pricing dashboard that makes sophisticated pricing optimisation accessible to retailers through a transparent and user-friendly interface. The project addresses the challenge of making advanced pricing strategies available to businesses without requiring extensive technical expertise or resources.
+This repository contains the implementation of a dynamic pricing dashboard that makes sophisticated pricing optimisation accessible to retailers through a transparent and user-friendly interface. The project addresses the challenge of making advanced pricing strategies available to businesses without requiring extensive technical expertise or resources. This project represents my submission to validate my master of engineering at Imperial College London in 2024.
 
 ### Background and Motivation
 
@@ -53,16 +53,11 @@ The system implements two distinct pricing strategies based on historical price 
 - **PIL (Python Imaging Library)**: Image processing for plot display
 
 ### Backend
-- **Flask**: RESTful API framework
+- **Flask**: RESTful API framework (HTTP connection)
 - **XGBoost**: Machine learning for demand prediction
 - **Scikit-learn**: Model evaluation and metrics
 - **Redis**: Data caching and session management
 - **NumPy**: Numerical computing
-
-### Development Environment
-- **Python 3.x**: Core programming language
-- **Git**: Version control
-- **Jupyter Notebooks**: Prototyping and analysis (if applicable)
 
 ## Repository Structure
 

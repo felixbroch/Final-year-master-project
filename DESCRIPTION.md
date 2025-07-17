@@ -26,18 +26,18 @@ The frontend is built using Shiny for Python and follows a reactive programming 
 #### 1. **Layout Structure**
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Page Header & Navigation                  │
+│                    Page Header & Navigation                 │
 ├─────────────────┬───────────────────────────────────────────┤
 │                 │                                           │
 │    Sidebar      │             Main Content                  │
-│   - File Upload │        ┌─────────────────────────┐       │
-│   - Test Data   │        │     Tab 1: Demand      │       │
-│   - Column List │        │      Analysis           │       │
-│                 │        ├─────────────────────────┤       │
-│                 │        │  Tab 2: Revenue Mgmt    │       │
-│                 │        ├─────────────────────────┤       │
-│                 │        │  Tab 3: Methodology     │       │
-│                 │        └─────────────────────────┘       │
+│   - File Upload │        ┌─────────────────────────┐        │
+│   - Test Data   │        │     Tab 1: Demand       │        │
+│   - Column List │        │      Analysis           │        │
+│                 │        ├─────────────────────────┤        │
+│                 │        │  Tab 2: Revenue Mgmt    │        │
+│                 │        ├─────────────────────────┤        │
+│                 │        │  Tab 3: Methodology     │        │
+│                 │        └─────────────────────────┘        │
 └─────────────────┴───────────────────────────────────────────┘
 ```
 
@@ -252,25 +252,3 @@ Intelligent caching with change detection:
 - **Input**: New datasets for comparison
 - **Process**: Generates unique hashes, compares with stored versions
 - **Output**: Prevents redundant processing, ensures data consistency
-
----
-
-## Error Handling
-
-### 1. **Frontend Error Handling**
-Robust error management for user interactions:
-- **Input**: HTTP responses and user actions
-- **Process**: Validates response codes, handles network failures, provides user feedback
-- **Output**: Graceful error messages and fallback behaviors
-
-### 2. **Backend Error Handling**
-Comprehensive error catching and response:
-- **Input**: User requests and data processing operations
-- **Process**: Try-catch blocks around critical operations, structured error responses
-- **Output**: JSON error messages with appropriate HTTP status codes
-
-### 3. **Data Validation**
-Ensures data quality and prevents processing failures:
-- **Input**: Uploaded files and user parameters
-- **Process**: Validates file formats, checks for required columns, verifies data types
-- **Output**: Clear validation messages and processing continuation or termination
