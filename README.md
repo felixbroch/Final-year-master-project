@@ -161,8 +161,7 @@ The dashboard features three main analysis tabs:
 2. Review the column mapping to ensure proper data interpretation
 3. Input external parameters for the optimisation scenario
 4. Specify the minimum and maximum price range for analysis
-5. Click "Submit" to generate optimal price recommendations
-6. Navigate through the tabs to explore demand patterns, revenue optimisation, and model accuracy
+5. Navigate through the tabs to explore demand patterns, revenue optimisation, and model accuracy
 
 ## Results and Deliverables
 
